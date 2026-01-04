@@ -1,0 +1,187 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+li {
+  list-style-type: none;
+}
+p {
+  margin-bottom: 0px;
+}
+/* Navbar */
+
+/* Container */
+.nav-container {  
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  float: left;
+}
+.logo img {
+ border-radius: 10px;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #2c7be5;
+}
+
+/* Action Buttons */
+.nav-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* Outline buttons */
+.btn.outline {
+  border: 1px solid #2c7be5;
+  color: #2c7be5;
+  background: transparent;
+}
+
+.btn.outline:hover {
+  background-color: #2c7be5;
+  color: #fff;
+}
+
+/* Admin Button */
+.btn.admin {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.btn.admin:hover {
+  background-color: #000;
+}
+
+/*Css for Home page*/
+.section-homepage {
+  background: grey;
+}
+.speciality-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+    row-gap: 2rem;
+    padding: 5rem 0;
+    border: 1px solid black;
+}
+.speciality-container-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 280px;
+}
+
+/* Dropdown */
+.speciality-dropdown {
+  height: 44px;
+  padding: 0 12px;
+  font-size: 15px;
+  color: #333;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  background-color: #fff;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Custom arrow */
+.speciality-container {
+  position: relative;
+}
+
+.speciality-container-dropdown::after {
+  content: "▼";
+  position: relative;
+  left: 16rem;
+  bottom: 2rem;
+  right: 14px;
+  font-size: 12px;
+  color: #666;
+  pointer-events: none;
+}
+
+/* Focus state */
+.speciality-dropdown:focus {
+  outline: none;
+  border-color: #999;
+}
+
+/* Disabled option */
+.speciality-dropdown option:disabled {
+  color: #999;
+}
+.section-search-speciality{
+  border-bottom: 1px solid black;
+}
+.speciality-container-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Card */
+.card {
+  max-width: fit-content;
+  padding: 1rem;
+  margin: 1rem;
+}
+.card p {
+  text-decoration: underline rgb(137, 136, 136);
+}
+.card span {
+  font-size: 12px;
+}
+.card-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-body > div:first-of-type  {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 4rem;
+}
+.card-body button{
+  margin: 5px;
+  height: 30px;
+  padding: 5px;
+  font-size: 12px;
+}
+.doctors-listing-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  row-gap: 20px;
+}
