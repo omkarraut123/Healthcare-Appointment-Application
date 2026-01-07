@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Header() {
+      const token = localStorage.getItem("token");     
+      
     return (
         <>   
 <header className="">
@@ -12,15 +15,15 @@ function Header() {
 
    
     <nav className="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Find Doctor</a>
-      <a href="#">About</a>
+      <Link to="/" >Home</Link> 
+      <Link to="/finddoctor">Find Doctor</Link> 
+      <Link to="/about">About</Link>     
     </nav>
 
  
     <div className="nav-actions">
       <a href="#" className="btn outline">Create Account</a>
-      <a href="#" className="btn outline">Login</a>
+      {!token && <Link to="/login" className='btn outline'>Login</Link> }   
       <a href="#" className="btn admin">Admin Login</a>
     </div>
 
